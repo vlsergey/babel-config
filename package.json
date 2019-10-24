@@ -1,0 +1,43 @@
+{
+  "name": "@vlsergey/babel-config",
+  "version": "0.0.1",
+  "description": "Default babel config for @vlsergey NPM packages",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "eslint:check": "eslint --ignore-pattern \"!.eslintrc.js\" .eslintrc.js src/**/*.js",
+    "eslint:fix": "eslint --ignore-pattern \"!.eslintrc.js\" --fix .eslintrc.js src/**/*.js",
+    "preversion": "npm run eslint:check",
+    "version": "",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlsergey/babel-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vlsergey/babel-config/issues"
+  },
+  "homepage": "https://github.com/vlsergey/babel-config#readme",
+  "keywords": [
+    "babel",
+    "default",
+    "vlsergey"
+  ],
+  "author": "Sergey Vladimirov <vlsergey@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.6.3"
+  },
+  "devDependencies": {
+    "@vlsergey/eslint-config": "^0.1.0",
+  }
+}
