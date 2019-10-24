@@ -38,6 +38,6 @@
     "@babel/preset-react": "^7.6.3"
   },
   "devDependencies": {
-    "@vlsergey/eslint-config": "^0.1.0",
+    "@vlsergey/eslint-config": "^0.1.0"
   }
 }
