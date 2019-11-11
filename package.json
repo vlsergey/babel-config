@@ -8,7 +8,7 @@
     "eslint:check": "eslint --ignore-pattern \"!.eslintrc.js\" .eslintrc.js src/**/*.js",
     "eslint:fix": "eslint --ignore-pattern \"!.eslintrc.js\" --fix .eslintrc.js src/**/*.js",
     "preversion": "npm run eslint:check",
-    "version": "",
+    "version": "npm publish --access=public",
     "postversion": "git push && git push --tags"
   },
   "repository": {
@@ -27,17 +27,17 @@
   "author": "Sergey Vladimirov <vlsergey@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-decorators": "^7.7.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-env": "^7.7.1",
     "@babel/preset-flow": "^7.0.0",
-    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-react": "^7.7.0",
     "babel-plugin-flow-runtime": "^0.19.0",
-    "flow-bin": "^0.110.1",
+    "flow-bin": "^0.111.3",
     "flow-runtime": "^0.17.0",
     "flow-typed": "^2.6.2"
   },
