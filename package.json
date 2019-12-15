@@ -1,6 +1,6 @@
 {
   "name": "@vlsergey/babel-config",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Default babel config for @vlsergey NPM packages",
   "main": "src/index.js",
   "module": "src/index.js",
